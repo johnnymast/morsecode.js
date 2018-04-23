@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Javascript Morsecode library",
   "main": "morsecode.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "test": "jest",
     "predocs": "rimraf docs/**",
@@ -23,14 +20,14 @@
     "url": "https://github.com/johnnymast/morsecode.js"
   },
   "keywords": [
-    "keywords",
-    "keywords2"
+    "morse",
+    "morsecode",
+    "encoding morse",
+    "decoding morse",
+    "army"
   ],
   "author": "Johnny Mast <mastjohnny@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "npm": "^5.8.0"
-  },
   "devDependencies": {
     "gitbook-plugin-theme-api": "^1.1.2",
     "jest": "^22.4.3",

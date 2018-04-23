@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {string=} string - string to encode or decode
+ * @constructor
+ */
 let MorseCode = function (string = '') {
   this.translation = {
     '0': '-----',
@@ -51,6 +56,14 @@ let MorseCode = function (string = '') {
   this.string = string
 }
 
+/**
+ * Encode a mose code string. You can give either the string to this function or
+ * the constructor. If not set we will throw an error.
+ *
+ * @param {string=} - The string to encode
+ * @throws error
+ * @returns {string
+ */
 MorseCode.prototype.encode = function (string = '', result = '') {
   if (string.length === 0) {
     if (this.string.length > 0) {
@@ -83,6 +96,14 @@ MorseCode.prototype.flip_array = function (array) {
     }, {})                                       //{} is the starting value of obj
 }
 
+/**
+ * Decode a mose code string. You can give either the string to this function or
+ * the constructor. If not set we will throw an error.
+ *
+ * @param {string=} - The string to decode
+ * @throws error
+ * @returns {string}
+ */
 MorseCode.prototype.decode = function (string = '', result = '') {
   if (string.length === 0) {
     if (this.string.length > 0) {
