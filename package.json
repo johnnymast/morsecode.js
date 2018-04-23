@@ -32,6 +32,7 @@
     "npm": "^5.8.0"
   },
   "devDependencies": {
+    "gitbook-plugin-theme-api": "^1.1.2",
     "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
     "rimraf": "^2.6.2"

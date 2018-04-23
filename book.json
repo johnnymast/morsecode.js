@@ -4,10 +4,10 @@
   },
   "source": {
     "include": [
-      "./src/"
+      "./"
     ],
     "exclude": [
-      "./src/polyfill/"
+      "./node_modules/"
     ],
     "includePattern": ".+\\.js(doc)?$",
     "excludePattern": "(^|\\/|\\\\)_"
