@@ -1,6 +1,5 @@
 const MorseCode = require('../morsecode')
 
-
 describe('Encode', function() {
   let morse = new MorseCode()
   it('sos should encode "sos" to ... --- ...', () => {
