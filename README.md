@@ -1,5 +1,12 @@
 # morsecode.js
 
+This package is a really easy one .. It will help to to encode or decode secret morsecode messages.
+
+## Requirements
+
+The following versions of Node are supported by this version.
+
++ NodeJS 6+
 
 ## Author
 
