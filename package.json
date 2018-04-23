@@ -2,7 +2,7 @@
   "name": "morsecode.js",
   "version": "1.0.0",
   "description": "Javascript Morsecode library",
-  "main": "index.js",
+  "main": "morsecode.js",
   "directories": {
     "test": "tests"
   },
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/johnnymast/morsecode.js"
   },
   "keywords": [
     "keywords",
