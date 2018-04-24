@@ -4,6 +4,27 @@
 
 This package is a really easy one .. It will help to to encode or decode secret morsecode messages.
 
+## Usage
+
+Morsecode.js is easy to use.
+
+### Node
+
+Just require je morsecode.js library and you will be ready to go.
+
+```javascript
+const MorseCode = require('./morsecode')
+
+let morse = new MorseCode()
+console.log(morse.encode('sos'));
+```
+
+Output: 
+
+```javascript
+... --- ...
+```
+
 ## Requirements
 
 The following versions of Node are supported by this version.
