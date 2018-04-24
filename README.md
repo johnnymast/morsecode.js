@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/johnnymast/morsecode.js.svg?style=svg)](https://circleci.com/gh/johnnymast/morsecode.js)
+
 # morsecode.js
 
 This package is a really easy one .. It will help to to encode or decode secret morsecode messages.
