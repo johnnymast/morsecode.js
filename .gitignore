@@ -2,3 +2,5 @@
 node_modules/
 /docs
 package-lock.json
+yarn-error.log
+yarn.lock
