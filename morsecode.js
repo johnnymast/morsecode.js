@@ -57,7 +57,7 @@ let MorseCode = function (string = '') {
 }
 
 /**
- * Encode a mose code string. You can give either the string to this function or
+ * Encode a morse code string. You can give either the string to this function or
  * the constructor. If not set we will throw an error.
  *
  * @param {string=} - The string to encode
@@ -97,7 +97,7 @@ MorseCode.prototype.flip_array = function (array) {
 }
 
 /**
- * Decode a mose code string. You can give either the string to this function or
+ * Decode a morse code string. You can give either the string to this function or
  * the constructor. If not set we will throw an error.
  *
  * @param {string=} - The string to decode
