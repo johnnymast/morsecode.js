@@ -59,10 +59,9 @@ let MorseCode = function (string = '') {
 /**
  * Encode a morse code string. You can give either the string to this function or
  * the constructor. If not set we will throw an error.
- *
- * @param {string=} - The string to encode
+ * @param {string} string - The string to encode
  * @throws error
- * @returns {string
+ * @returns {string}
  */
 MorseCode.prototype.encode = function (string = '', result = '') {
   if (string.length === 0) {
@@ -87,20 +86,24 @@ MorseCode.prototype.encode = function (string = '', result = '') {
   return result.trim()
 }
 
-MorseCode.prototype.flip_array = function (array) {
-  return Object.keys(array)                //get the keys as an array
-    .filter(array.hasOwnProperty.bind(array)) //safety check (optional)
-    .reduce(function (obj, key) {                  //build up new object
-      obj[array[key]] = key
-      return obj
-    }, {})                                       //{} is the starting value of obj
+/**
+ * Flip the keys and values of an array.
+ * @param {array} source - the array to flip.
+ * @param {array} {target=[]} - The new array to write the result to.
+ * @returns {Array}
+ */
+MorseCode.prototype.flip = function (source, target = []) {
+  Object.keys(source).map((key) => {
+    let value = source[key]
+    target[value] = key
+  })
+  return target
 }
 
 /**
  * Decode a morse code string. You can give either the string to this function or
  * the constructor. If not set we will throw an error.
- *
- * @param {string=} - The string to decode
+ * @param {string} string - The string to decode
  * @throws error
  * @returns {string}
  */
@@ -114,7 +117,9 @@ MorseCode.prototype.decode = function (string = '', result = '') {
   }
 
   if (string.length > 0) {
-    let characters = this.flip_array(this.translation)
+    //console.log('characters', this.translation)
+    let characters = this.flip(this.translation)
+    //  console.log('characters', characters)
     let split = string.split(' ')
     for (let i = 0; i < split.length; i++) {
       let char = split[i]

@@ -39,7 +39,7 @@ This package is created and maintained by [Johnny Mast](https://github.com/johnn
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Johnny Mast
+Copyright (c) 2019 Johnny Mast
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
