@@ -4,9 +4,7 @@
   "description": "Javascript Morsecode library",
   "main": "morsecode.js",
   "scripts": {
-    "test": "jest",
-    "predocs": "rimraf docs/**",
-    "docs": "jsdoc  -c book.json -R README.md"
+    "test": "jest"
   },
   "jest": {
     "verbose": true,
@@ -28,13 +26,8 @@
   ],
   "author": "Johnny Mast <mastjohnny@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "gitbook-plugin-theme-api": "^1.1.2",
-    "jest": "^22.4.3",
-    "jsdoc": "^3.5.5",
-    "rimraf": "^2.6.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "yarn": "^1.6.0"
+    "jest": "^24.9.0"
   }
 }
