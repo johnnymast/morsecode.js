@@ -1,28 +1,28 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/repo/morsecode.js
-      docker:
-          - image: circleci/node:latest-browsers
-      steps:
-        - run:
-            name: install-npm-wee
-            command: npm install
-        - save_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-            paths:
-              - ./node_modules
-        - run:
-            name: test
-            command: npm test
-        - store_artifacts:
-            path: test-results.xml
-            prefix: tests
-        - store_artifacts:
-            path: coverage
-            prefix: coverage
-        - store_test_results:
-            path: test-results.xml
-
-
-
+    working_directory: ~/morsecode.js
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      #      - restore_cache:
+      #          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm-wee
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm test
+      - store_artifacts:
+          path: test-results.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: test-results.xml
