@@ -1,6 +1,6 @@
 /**
  *
- * @param {string=} string - string to encode or decode
+ * @param {string} string - string to encode or decode
  * @constructor
  */
 let MorseCode = function (string = '') {
@@ -117,9 +117,7 @@ MorseCode.prototype.decode = function (string = '', result = '') {
   }
 
   if (string.length > 0) {
-    //console.log('characters', this.translation)
     let characters = this.flip(this.translation)
-    //  console.log('characters', characters)
     let split = string.split(' ')
     for (let i = 0; i < split.length; i++) {
       let char = split[i]
